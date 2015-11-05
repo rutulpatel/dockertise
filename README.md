@@ -1,0 +1,1 @@
+docker trainig + self practise
