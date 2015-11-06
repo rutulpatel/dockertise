@@ -1,12 +1,8 @@
-lb:
- build: haproxy
- ports:
-  - "80:80"
 web:
  build: .
  command: python app.py
  ports:
-  - "5000"
+  - "5001:5000"
  volumes:
   - .:/code
  links:
