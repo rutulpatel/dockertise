@@ -1,5 +1,7 @@
 lb:
- build: haproxy
+ image: tutum/haproxy
+ links:
+  - web
  ports:
   - "80:80"
 web:
